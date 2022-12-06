@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', cursive;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://i.imgur.com/qbkXk6P.png);
+    height: 200vh;
+    background-position: center;
+}
+
+
+/*Snow fall starts*/
+
+.snow,
+.snow:after,
+.snow:before {
+    content: "";
+    position: absolute;
+    top: -650px;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent), radial-gradient(4px 4px at 100px 50px, #fff, transparent), radial-gradient(6px 6px at 200px 150px, #fff, transparent), radial-gradient(3px 3px at 300px 250px, #fff, transparent), radial-gradient(4px 4px at 400px 350px, #fff, transparent), radial-gradient(6px 6px at 500px 100px, #fff, transparent), radial-gradient(3px 3px at 50px 200px, #fff, transparent), radial-gradient(4px 4px at 150px 300px, #fff, transparent), radial-gradient(6px 6px at 250px 400px, #fff, transparent), radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+    background-size: 650px 650px;
+    animation: SnowAnimation 3s linear;
+    animation-iteration-count: infinite;
+}
+
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 6s;
+}
+
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+@keyframes SnowAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(650px);
+    }
+}
+
+
+/*Snow fall ends*/
+
+ul {
+    list-style: none;
+    float: right;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+ul li.active a {
+    background-color: black;
+    color: #fff;
+}
+
+.logo img {
+    float: left;
+    width: 180px;
+    height: auto;
+}
+
+.main {
+    max-width: 1800px;
+    margin: auto;
+}
+
+.Title {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Title-2 {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Title-3 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
